@@ -1,0 +1,55 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  border: 10px solid pink;
+}
+
+.game {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  background-image: url(../img/giraffeSkin.jpg);
+ 
+}
+
+.game h1 {
+  font-size: 110px;
+  text-align: center;
+  margin: 150px;
+}
+
+.game p {
+  font-size: 30px;
+  margin-bottom: 120px;
+  padding: 0 500px;
+  text-align: center;
+  
+
+}
+
+.game button {
+  margin: 100px;
+  font-size: 40px;
+  background-color: #ffb84d;
+  border-radius: 8px;
+  border-style: outset;
+  border-color: #ffd699;
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.game button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
