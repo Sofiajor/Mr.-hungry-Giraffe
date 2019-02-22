@@ -23,7 +23,7 @@ function Food(game, images, velocityFood) {
   this.img = new Image();
 
   //chooses random food Images
-  this.img.src = "../img/" + images[Math.floor(Math.random() * images.length)];
+  this.img.src = "img/" + images[Math.floor(Math.random() * images.length)];
 
   //draws food
   Food.prototype.draw = function() {

@@ -19,6 +19,7 @@ adios = function() {
   document.getElementsByClassName("gameOver")[0].style.display = "none"
   Game.init("canvas");
   Game.start()
+  this.music3.pause()
 }
 pepe = function(){
 

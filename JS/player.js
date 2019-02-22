@@ -12,10 +12,10 @@ function Player(game) {
   this.y = this.y0;
 
   this.img = new Image();
-  this.img.src = "../img/giraffe.png";
+  this.img.src = "img/giraffe.png";
 
   this.img_flipped = new Image();
-  this.img_flipped.src = "../img/giraffe_flipped.png";
+  this.img_flipped.src = "img/giraffe_flipped.png";
 
   //number of diferent images
   this.img.frames = 0;

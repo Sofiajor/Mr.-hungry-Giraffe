@@ -7,17 +7,16 @@ var Game = {
   level: 0,
   gameOverInterval: undefined,
   foodImages: [
-    ["popcorn.png", "hamburger.png", "cheese.png", "vodka.png"],
-    ["iceCream.png", "watermelon.png", "caiprinha.png"],
-    ["egg.png", "honey.png", "aubergine.png", "sushi.png"],
-    ["bacon.png", "Cookie.png", "beer.png", "avocado.png", "blueberrie.png"],
-    ["burrito.png", "nuts.png", "meat.png"]
+    ["popcorn.png","beer.png","bacon.png","hamburger.png", "vodka.png"],
+    ["iceCream.png", "watermelon.png","avocado.png", "caiprinha.png"],
+    ["egg.png", "burrito.png", "honey.png","Cookie.png", "aubergine.png", "sushi.png"],
+    [ "Cookie.png", "avocado.png", "blueberrie.png","meat.png", "cheese.png"]
     
   ],
   backgroundImages: [
-    "../img/ironhack3.jpg",
-    "../img/beach3.jpeg",
-    "../img/snow3.jpeg",
+    "img/ironhack3.jpg",
+    "img/beach3.jpeg",
+    "img/snow3.jpeg",
   ],
   velocityFood: [-5, -5, -7],
 
@@ -31,9 +30,9 @@ var Game = {
     this.canvas.width = this.w;
     this.canvas.height = this.h;
     this.framesCounter = 0;
-    this.music = new Audio("../music/music1.mp3");
-    this.music2 = new Audio("../music/music2.mp3");
-    this.music3 = new Audio ("../music/music3.mp3");
+    this.music = new Audio("music/music1.mp3");
+    this.music2 = new Audio("music/music2.mp3");
+    this.music3 = new Audio ("music/music3.mp3");
 
     this.reset();
   },
@@ -113,7 +112,7 @@ var Game = {
       this.foods = [];
     } else if (this.scoreBoard.rectW >= 400 && this.level === 2) {
       this.level = 3;
-      
+      this.music3.pause()
 
       this.scoreBoard.rectW = 10;
       this.foods = [];
@@ -177,11 +176,14 @@ var Game = {
           } else if (food.img.src.includes("vodka.png")) {
             console.log("vodka!!");
             this.scoreBoard.rectW += 100;
+          } else if (food.img.src.includes("caiprinha.png")) {
+            console.log("caipirinha!!");
+            this.scoreBoard.rectW += 100;
           } else {                      //diminui el Scoreboard
             console.log("This food is bad");
             this.scoreBoard.rectW -= 50;
           }
-
+         
           console.log(this.score.rectW);
 
           food.collition = true;
