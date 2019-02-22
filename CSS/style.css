@@ -6,7 +6,7 @@
 }
 
 canvas {
-  border: 10px solid pink;
+  border: 1px solid pink;
 }
 
 .game {
@@ -20,36 +20,157 @@ canvas {
   z-index: 1;
   flex-direction: column;
   background-image: url(../img/giraffeSkin.jpg);
+  
  
 }
 
 .game h1 {
   font-size: 110px;
   text-align: center;
-  margin: 150px;
+  margin: 100px;
+  font-family: 'Bungee', cursive;
 }
 
 .game p {
-  font-size: 30px;
-  margin-bottom: 120px;
-  padding: 0 500px;
+  width: 80%;
+  font-size: 41px;
+  width: 1400px;
+  margin: 0px 110px;
+  padding: 40px 10px;
+  line-height: 1.1;
   text-align: center;
+  font-family: 'Special Elite', cursive;
+  background: rgba(255, 255, 255, 0.80);
   
 
 }
 
 .game button {
-  margin: 100px;
+  margin: 60px;
+  font-size: 50px;
+  background-color: #ffb84d;
+  border-radius: 8px;
+  border-style: outset;
+  border-color: #ffd699;
+  font-family: 'Bungee', cursive;
+  color: black;
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+.game button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.gameOver p{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 50px 0 px 0px 30px;
+  background:  #ffb84d;
+  font-size: 30px;
+  padding: 100px;
+  font-family: 'Averia Sans Libre', cursive;
+  border-radius: 50%;
+  margin-bottom: 300px;
+
+
+
+}
+.gameOver {
+  background: white;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  display: none; 
+  
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;*/
+}
+.flexContainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background 0.5s ease-out;
+}
+.gameOver button {
+  margin: 10px;
   font-size: 40px;
   background-color: #ffb84d;
   border-radius: 8px;
   border-style: outset;
   border-color: #ffd699;
   padding: 40px;
+  font-family: 'Bungee', cursive;
+
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   z-index: 4;
 }
 
-.game button:hover {
+.gameOver button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+.none button{
+  margin: 50px;
+  font-size: 50px;
+  background-color: #ffb84d;
+  border-radius: 8px;
+  border-style: outset;
+  border-color: #ffd699;
+  padding: 20px;
+  font-family: 'Bungee', cursive;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   z-index: 4;
+}
+
+.desaparecer {
+  display:none;
+
+}
+
+
+.pepe {
+  position: absolute;
+  width: 43%;
+  padding-bottom: 300px;
+  padding-top: 240px;
+  text-align: center;
+  margin-top: 50;
+}
+
+
+
+/*   
+Obra de arte de DANI */
+/* .sprite-1 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.sprite-1.right {
+  background-image: url("../img/boat-right.png");
+}
+
+.sprite-1.left {  
+  background-image: url("../img/boat-left.png");
+} */

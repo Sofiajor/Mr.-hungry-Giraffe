@@ -4,27 +4,71 @@
     <title>Sofia's Game</title>
     <!-- IMPORTANTE EL ORDEN -->
     <!-- Si un objeto necesita otro, incluirlo antes -->
+    
   
-<script type="text/javascript" src="../JS/background.js"></script>
-<script type="text/javascript" src="../JS/food.js"></script>
-   <script type="text/javascript" src="../JS/player.js"></script>
-   <script type="text/javascript" src="../JS/score.js"></script>
-  <script type="text/javascript" src="../JS/game.js"></script> 
-  <script type="text/javascript" src="../JS/index.js"></script>
+    <script type="text/javascript" src="../JS/AnimatedBackground.js"></script>
+    <script type="text/javascript" src="../JS/background.js"></script>
+    <script type="text/javascript" src="../JS/food.js"></script>
+    <script type="text/javascript" src="../JS/player.js"></script>
+    <script type="text/javascript" src="../JS/score.js"></script>
+    <script type="text/javascript" src="../JS/game.js"></script>
+    <script type="text/javascript" src="../JS/index.js"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill|Shojumaru" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Concert+One|Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill|Shojumaru" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
   </head>
   <body>
     <canvas id="canvas"></canvas>
 
     <div class="game">
-    <h1>Mr. vegan Giraffe</h1>
-    <p>Dear Player, Your about to encounter yourselfis nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-    
-    <button onclick="hola()">powerded by avocado</button>
-    
-    
+      <h1>Mr. hungry Giraffe</h1>
+      <p>
+        Dear Player, <br>
+        You are about to embark on quite a food journey. <br>
+        Are you ready? <br>
+        Let me just tell you something before you can start.  You are a hungry, and traveling all around the world, 4.8 meters giraffe. 
+        However, you - The giraffe- has a particular feature, you are <span style="font-size:45px"><strong>vegan!!!</strong></span> <br>
+        
+        You can't imagine how difficult and at times quite puzzling it can be to find food in some of the most unusual and exotic places. <br>
+        
+        The important question is: <i>Will you be able to feed yourself???</i>  </p> 
+
+      <button onclick="hola()">it's party time </button>
     </div>
+
+
+    <div>
+
+    <div class="gameOver">
+
+      <div class="flexContainer"> 
+        <div class="gameText"> 
+      <img src="../img/gameover.png" class="gameOverImg" alt="game over" height="canvas.height" width="canvas.width">
+      </div>
+      
+      <button onclick="adios()">one more shot?</button>
+
+
+      <button onclick="pepe()">thank you</button>
+      <div class= "pepe desaparecer" id="sopa">
+
+        <p>Big Shoutout to my genius teacher, Germanzito, who inspired and encouraged us every single day, kept fighting the limits and teaching us the impossible, even when we were utterly lost, frustrated and desperate with our code.<br>
+          Also, I want to thank three fantastic, extraordinarily patient and very much indeed nerds, our TA's, Sonia, Gabi, and my fellow giraffe Alberto. You guys rock!! <br>
+          Por último, muchísimas gracias a mis compañeros, por las risas juntos, los lloros y por soportar a la peque de la clase, pero no os olvidéis que soy la mas alta!!
+        </p>
+
+      </div>
+    </div>
+        
+
+    
+  </div>
+</div>
+
   </body>
 </html>

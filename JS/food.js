@@ -2,8 +2,8 @@ function Food(game, images, velocityFood) {
   this.game = game;
 
   //size-measure of the food
-  this.w = 100;
-  this.h = 100;
+  this.w = 150;
+  this.h = 150;
 
   //speed of food moving down
   this.dy = velocityFood;
